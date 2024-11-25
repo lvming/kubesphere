@@ -16,6 +16,7 @@ import (
 	_ "kubesphere.io/kubesphere/pkg/apiserver/authentication/identityprovider/github"
 	_ "kubesphere.io/kubesphere/pkg/apiserver/authentication/identityprovider/ldap"
 	_ "kubesphere.io/kubesphere/pkg/apiserver/authentication/identityprovider/oidc"
+	_ "kubesphere.io/kubesphere/pkg/apiserver/authentication/identityprovider/weixin"
 	"kubesphere.io/kubesphere/pkg/apiserver/authentication/oauth"
 )
 
