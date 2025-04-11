@@ -6,9 +6,9 @@
 
 module kubesphere.io/kubesphere
 
-go 1.22.4
+go 1.23.0
 
-toolchain go1.22.8
+toolchain go1.23.7
 
 require (
 	code.cloudfoundry.org/bytefmt v0.0.0-20190710193110-1eb035ffe2b6
@@ -25,8 +25,8 @@ require (
 	github.com/emicklei/go-restful-openapi/v2 v2.9.2-0.20230928201233-d828a4fc267c
 	github.com/emicklei/go-restful/v3 v3.11.0
 	github.com/evanphx/json-patch/v5 v5.9.0
-	github.com/go-git/go-git/v5 v5.11.0
-	github.com/go-jose/go-jose/v4 v4.0.2
+	github.com/go-git/go-git/v5 v5.13.0
+	github.com/go-jose/go-jose/v4 v4.0.5
 	github.com/go-ldap/ldap v3.0.3+incompatible
 	github.com/go-logr/logr v1.4.2
 	github.com/go-openapi/loads v0.21.2
@@ -34,14 +34,14 @@ require (
 	github.com/go-openapi/strfmt v0.21.3
 	github.com/go-openapi/validate v0.22.0
 	github.com/go-redis/redis v6.15.2+incompatible
-	github.com/golang-jwt/jwt/v4 v4.5.1
+	github.com/golang-jwt/jwt/v4 v4.5.2
 	github.com/golang/example v0.0.0-20170904185048-46695d81d1fa
 	github.com/google/go-cmp v0.6.0
 	github.com/google/go-containerregistry v0.14.0
 	github.com/google/gops v0.3.23
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.1
-	github.com/hashicorp/golang-lru v1.0.2
+	github.com/json-iterator/go v1.1.12
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/moby/term v0.5.0
 	github.com/modern-go/reflect2 v1.0.2
@@ -58,10 +58,10 @@ require (
 	github.com/spf13/cobra v1.8.1
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.18.2
-	github.com/stretchr/testify v1.9.0
-	golang.org/x/crypto v0.28.0
+	github.com/stretchr/testify v1.10.0
+	golang.org/x/crypto v0.36.0
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56
-	golang.org/x/net v0.30.0
+	golang.org/x/net v0.37.0
 	golang.org/x/oauth2 v0.22.0
 	gopkg.in/cas.v2 v2.2.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
@@ -100,7 +100,7 @@ require (
 	github.com/Masterminds/squirrel v1.5.4 // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
 	github.com/OneOfOne/xxhash v1.2.8 // indirect
-	github.com/ProtonMail/go-crypto v0.0.0-20230828082145-3c4c8a2d2371 // indirect
+	github.com/ProtonMail/go-crypto v1.1.3 // indirect
 	github.com/agnivade/levenshtein v1.2.0 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -108,7 +108,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chai2010/gettext-go v1.0.2 // indirect
 	github.com/cloudflare/circl v1.3.7 // indirect
-	github.com/containerd/containerd v1.7.23 // indirect
+	github.com/containerd/containerd v1.7.27 // indirect
 	github.com/containerd/errdefs v0.3.0 // indirect
 	github.com/containerd/log v0.1.0 // indirect
 	github.com/containerd/platforms v0.2.1 // indirect
@@ -129,7 +129,7 @@ require (
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
 	github.com/go-errors/errors v1.4.2 // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
-	github.com/go-git/go-billy/v5 v5.5.0 // indirect
+	github.com/go-git/go-billy/v5 v5.6.0 // indirect
 	github.com/go-gorp/gorp/v3 v3.1.0 // indirect
 	github.com/go-ini/ini v1.67.0 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
@@ -142,7 +142,7 @@ require (
 	github.com/gobuffalo/flect v1.0.3 // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang/glog v1.2.2 // indirect
+	github.com/golang/glog v1.2.4 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/btree v1.1.2 // indirect
@@ -166,7 +166,6 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/jmoiron/sqlx v1.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
-	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kevinburke/ssh_config v1.2.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
@@ -204,10 +203,10 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sagikazarmark/locafero v0.4.0 // indirect
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
-	github.com/sergi/go-diff v1.3.1 // indirect
+	github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
-	github.com/skeema/knownhosts v1.2.1 // indirect
+	github.com/skeema/knownhosts v1.3.0 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
 	github.com/spf13/cast v1.7.0 // indirect
@@ -238,17 +237,17 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/mod v0.21.0 // indirect
-	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.26.0 // indirect
-	golang.org/x/term v0.25.0 // indirect
-	golang.org/x/text v0.19.0 // indirect
+	golang.org/x/sync v0.10.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/term v0.30.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
 	golang.org/x/time v0.7.0 // indirect
 	golang.org/x/tools v0.26.0 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.4.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240814211410-ddb44dafa142 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142 // indirect
 	google.golang.org/grpc v1.67.1 // indirect
-	google.golang.org/protobuf v1.34.2 // indirect
+	google.golang.org/protobuf v1.35.2 // indirect
 	gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
@@ -271,7 +270,7 @@ replace (
 	github.com/Microsoft/go-winio => github.com/Microsoft/go-winio v0.6.2
 	github.com/asaskevich/govalidator => github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2
 	github.com/aws/aws-sdk-go => github.com/aws/aws-sdk-go v1.55.5
-	github.com/containerd/containerd => github.com/containerd/containerd v1.7.23
+	github.com/containerd/containerd => github.com/containerd/containerd v1.7.27
 	github.com/davecgh/go-spew => github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/docker/cli => github.com/docker/cli v27.1.0+incompatible
 	github.com/docker/distribution => github.com/docker/distribution v2.8.3+incompatible
@@ -283,7 +282,8 @@ replace (
 	github.com/emicklei/go-restful/v3 => github.com/emicklei/go-restful/v3 v3.11.0
 	github.com/evanphx/json-patch/v5 => github.com/evanphx/json-patch/v5 v5.9.0
 	github.com/fsnotify/fsnotify => github.com/fsnotify/fsnotify v1.7.0
-	github.com/go-git/go-git/v5 => github.com/go-git/go-git/v5 v5.11.0
+	github.com/go-git/go-git/v5 => github.com/go-git/go-git/v5 v5.13.0
+	github.com/go-jose/go-jose/v4 => github.com/go-jose/go-jose/v4 v4.0.5
 	github.com/go-ldap/ldap => github.com/go-ldap/ldap v3.0.3+incompatible
 	github.com/go-logr/logr => github.com/go-logr/logr v1.4.2
 	github.com/go-openapi/analysis => github.com/go-openapi/analysis v0.21.4
@@ -297,9 +297,9 @@ replace (
 	github.com/go-openapi/validate => github.com/go-openapi/validate v0.22.0
 	github.com/go-redis/redis => github.com/go-redis/redis v6.15.2+incompatible
 	github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
-	github.com/golang-jwt/jwt/v4 => github.com/golang-jwt/jwt/v4 v4.5.1
+	github.com/golang-jwt/jwt/v4 => github.com/golang-jwt/jwt/v4 v4.5.2
 	github.com/golang/example => github.com/golang/example v0.0.0-20170904185048-46695d81d1fa
-	github.com/golang/glog => github.com/golang/glog v1.2.2
+	github.com/golang/glog => github.com/golang/glog v1.2.4
 	github.com/golang/protobuf => github.com/golang/protobuf v1.5.4
 	github.com/google/go-cmp => github.com/google/go-cmp v0.6.0
 	github.com/google/go-containerregistry => github.com/google/go-containerregistry v0.14.0
@@ -307,7 +307,6 @@ replace (
 	github.com/google/gops => github.com/google/gops v0.3.23
 	github.com/google/uuid => github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket => github.com/gorilla/websocket v1.5.1
-	github.com/hashicorp/golang-lru => github.com/hashicorp/golang-lru v1.0.2
 	github.com/inconshreveable/mousetrap => github.com/inconshreveable/mousetrap v1.1.0
 	github.com/jbenet/go-context => github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
 	github.com/josharian/intern => github.com/josharian/intern v1.0.0
@@ -333,7 +332,7 @@ replace (
 	github.com/spf13/cobra => github.com/spf13/cobra v1.8.1
 	github.com/spf13/pflag => github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper => github.com/spf13/viper v1.18.2
-	github.com/stretchr/testify => github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify => github.com/stretchr/testify v1.10.0
 	go.mongodb.org/mongo-driver => go.mongodb.org/mongo-driver v1.17.1
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc => go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.53.0
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp => go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.53.0
@@ -343,18 +342,17 @@ replace (
 	go.opentelemetry.io/otel/metric => go.opentelemetry.io/otel/metric v1.28.0
 	go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.28.0
 	go.opentelemetry.io/otel/trace => go.opentelemetry.io/otel/trace v1.28.0
-	golang.org/x/crypto => golang.org/x/crypto v0.28.0
-	golang.org/x/net => golang.org/x/net v0.30.0
+	golang.org/x/crypto => golang.org/x/crypto v0.32.0
+	golang.org/x/net => golang.org/x/net v0.37.0
 	golang.org/x/oauth2 => golang.org/x/oauth2 v0.21.0
 	golang.org/x/sync => golang.org/x/sync v0.1.0
 	golang.org/x/sys => golang.org/x/sys v0.26.0
 	golang.org/x/text => golang.org/x/text v0.19.0
 	golang.org/x/tools => golang.org/x/tools v0.26.0
 	google.golang.org/grpc => google.golang.org/grpc v1.67.1
-	google.golang.org/protobuf => google.golang.org/protobuf v1.34.2
+	google.golang.org/protobuf => google.golang.org/protobuf v1.35.2
 	gopkg.in/asn1-ber.v1 => gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d
 	gopkg.in/cas.v2 => gopkg.in/cas.v2 v2.2.0
-	gopkg.in/square/go-jose.v2 => gopkg.in/square/go-jose.v2 v2.6.0
 	gopkg.in/warnings.v0 => gopkg.in/warnings.v0 v0.1.2
 	gopkg.in/yaml.v2 => gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 => gopkg.in/yaml.v3 v3.0.1

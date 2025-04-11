@@ -15,6 +15,7 @@ import (
 
 	"kubesphere.io/kubesphere/pkg/apiserver/authentication"
 	"kubesphere.io/kubesphere/pkg/models/composedapp"
+	"kubesphere.io/kubesphere/pkg/models/kubeconfig"
 	"kubesphere.io/kubesphere/pkg/models/terminal"
 	"kubesphere.io/kubesphere/pkg/multicluster"
 	"kubesphere.io/kubesphere/pkg/simple/client/k8s"
@@ -24,6 +25,7 @@ type Options struct {
 	KubernetesOptions     *k8s.Options
 	AuthenticationOptions *authentication.Options
 	MultiClusterOptions   *multicluster.Options
+	KubeconfigOptions     *kubeconfig.Options
 	TerminalOptions       *terminal.Options
 	ComposedAppOptions    *composedapp.Options
 	HelmExecutorOptions   *HelmExecutorOptions
@@ -38,6 +40,7 @@ type HelmExecutorOptions struct {
 	HistoryMax          uint                  `json:"historyMax,omitempty" yaml:"historyMax,omitempty" mapstructure:"historyMax,omitempty"`
 	JobTTLAfterFinished time.Duration         `json:"jobTTLAfterFinished,omitempty" yaml:"jobTTLAfterFinished,omitempty" mapstructure:"jobTTLAfterFinished,omitempty"`
 	Resources           *ResourceRequirements `json:"resources,omitempty" yaml:"resources,omitempty" mapstructure:"resources,omitempty"`
+	Affinity            *corev1.Affinity      `json:"affinity,omitempty" yaml:"affinity,omitempty" mapstructure:"affinity,omitempty"`
 }
 
 type ResourceRequirements struct {
